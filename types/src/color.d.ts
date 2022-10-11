@@ -30,7 +30,7 @@ export interface ColorObject {
 export interface ColorConstructor {
 	spaceId: string;
 	coords: Coords;
-	alpha: number;
+	alpha: number | undefined;
 }
 
 export type ColorTypes = Color | ColorObject | ColorConstructor | string;

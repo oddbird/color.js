@@ -19,10 +19,10 @@ export interface Format {
 }
 
 export interface CoordMeta {
-	name?: string;
-	type?: string;
-	range?: [number, number];
-	refRange?: [number, number];
+	name?: string | undefined;
+	type?: string | undefined;
+	range?: [number, number] | undefined;
+	refRange?: [number, number] | undefined;
 }
 
 export interface Options {
