@@ -6,7 +6,7 @@ export interface Format {
 	name?: string | undefined;
 	id?: string | undefined;
 	coords?: string[] | undefined;
-	coordGrammar?: (string & { range?: [number, number] })[] | undefined;
+	coordGrammar?: Array<string & { range?: [number, number] }> | undefined;
 	serializeCoords?:
 		| ((coords: Coords, precision: number) => [string, string, string])
 		| undefined;
@@ -89,7 +89,7 @@ export default class ColorSpace {
 	toBase?: ((coords: Coords) => number[]) | undefined;
 	formats: Record<string, Format>;
 	referred?: string | undefined;
-	white: string;
+	white: White;
 
 	from(color: Color | ColorObject): Coords;
 	from(space: string | ColorSpace, coords: Coords): Coords;

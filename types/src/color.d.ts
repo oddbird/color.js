@@ -24,7 +24,7 @@ export type Coords = [number, number, number];
 export interface ColorObject {
 	space: ColorSpace;
 	coords: Coords;
-	alpha: number;
+	alpha?: number;
 }
 
 export interface ColorConstructor {
