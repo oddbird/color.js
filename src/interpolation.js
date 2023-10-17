@@ -34,7 +34,7 @@ export function mix (c1, c2, p = .5, o = {}) {
 
 	let {space, outputSpace, premultiplied} = o;
 
-	let r = range(c1, c2, {space, outputSpace, premultiplied});
+	let r = range(c1, c2, o);
 	return r(p);
 }
 
