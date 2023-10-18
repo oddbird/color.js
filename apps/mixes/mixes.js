@@ -130,6 +130,27 @@ const spaces = {
             [0, 1],
         ],
     },
+    rec2020: {
+        // constructor: rec2020,
+        name: "rec2020",
+        isLegacy: false,
+        isPolar: false,
+        pink: [0.8837118321235519, 0.6578067923850563, 0.7273197917658354],
+        blue: [0.2151122740532409, 0.32363973150195124, 0.4090033869684574],
+        channels: ["red", "green", "blue"],
+        ranges: [
+          [0, 1],
+          [0, 1],
+          [0, 1],
+        ],
+        hasOutOfGamut: true,
+        gamutExamples: [
+          [
+            [0.5, 2, 2],
+            [1, 1, 1],
+          ],
+        ],
+      },
     xyz: {
         // constructor: xyz,
         name: "xyz",
